@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TDS Technical Application</string>
+
+    <string name="emergency">Emergency</string>
+    <string name="no_emergency">No Emergency</string>
+
+    <string name="total">Total</string>
+    <string name="employer">Emp</string>
+    <string name="eighteen">18</string>
+    <string name="sixty">60</string>
+</resources>

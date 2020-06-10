@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txv_emergency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textAllCaps="true"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="NO EMERGENCY" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txv_emergency">
+
+        <TextView
+            android:id="@+id/txv_total_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="100sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="60" />
+
+        <TextView
+            android:id="@+id/txv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/txv_total_number"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="@+id/txv_total_number"
+            app:layout_constraintTop_toBottomOf="@+id/txv_total_number"
+            tools:text="@string/total" />
+
+        <TextView
+            android:id="@+id/txv_bigger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/brown"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txv_middle"
+            app:layout_constraintTop_toTopOf="@+id/txv_middle"
+            tools:text="5" />
+
+        <TextView
+            android:id="@+id/txv_smaller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/yellow"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/txv_middle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txv_middle"
+            tools:text="25" />
+
+        <TextView
+            android:id="@+id/txv_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:textColor="@color/blue"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/txv_total_number"
+            app:layout_constraintStart_toStartOf="@+id/txv_total_number"
+            app:layout_constraintTop_toBottomOf="@+id/txv_total"
+            tools:text="30" />
+
+        <TextView
+            android:id="@+id/txv_smaller_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/yellow"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/txv_smaller"
+            app:layout_constraintStart_toStartOf="@+id/txv_smaller"
+            app:layout_constraintTop_toBottomOf="@+id/txv_smaller" />
+
+        <TextView
+            android:id="@+id/txv_middle_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/txv_middle"
+            app:layout_constraintStart_toStartOf="@+id/txv_middle"
+            app:layout_constraintTop_toBottomOf="@+id/txv_middle" />
+
+        <TextView
+            android:id="@+id/txv_bigger_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/brown"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/txv_bigger"
+            app:layout_constraintStart_toStartOf="@+id/txv_bigger"
+            app:layout_constraintTop_toBottomOf="@+id/txv_bigger" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
