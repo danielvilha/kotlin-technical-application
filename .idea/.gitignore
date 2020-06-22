@@ -1,0 +1,10 @@
+# Default ignored files
+/workspace.xml
+/caches
+/codeStyles
+/libraries/*
+/jarRepositories.xml
+/misc.xml
+/modules.xml
+/runConfigurations.xml
+/vcs.xml
