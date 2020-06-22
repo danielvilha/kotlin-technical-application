@@ -102,7 +102,7 @@ class MainActivity : AppCompatActivity() {
             /* Total smaller number of employers */
             txv_smaller.text = smallerNumber(response.data).toString()
             txv_smaller_text.text = String.format(
-                "%s < %s",
+                "%s<%s",
                 getString(R.string.employer),
                 getString(R.string.eighteen)
             )
@@ -110,7 +110,7 @@ class MainActivity : AppCompatActivity() {
             /* Total middle number of employers */
             txv_middle.text = middleNumber(response.data).toString()
             txv_middle_text.text = String.format(
-                "%s < %s < %s",
+                "%s<%s<%s",
                 getString(R.string.eighteen),
                 getString(R.string.employer),
                 getString(R.string.sixty)
@@ -119,7 +119,7 @@ class MainActivity : AppCompatActivity() {
             /* Total bigger number of employers */
             txv_bigger.text = biggerNumber(response.data).toString()
             txv_bigger_text.text = String.format(
-                "%s < %s",
+                "%s<%s",
                 getString(R.string.sixty),
                 getString(R.string.employer)
             )
