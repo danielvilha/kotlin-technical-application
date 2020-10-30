@@ -1,4 +1,4 @@
-# TDS Technical Application
+# Kotlin Technical Application
 Employees working in a building and an alarm is triggered every time there is an emergency. The Android app displays "No Emergency" when none, "Emergency" and how many employees are currently in the building.
 
 ### Screenshots
